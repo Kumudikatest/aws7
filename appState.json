@@ -1,0 +1,112 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "9daea6d6-4ebc-42f0-8a46-1cafc428d23d": {
+        "id": "9daea6d6-4ebc-42f0-8a46-1cafc428d23d",
+        "parent": null,
+        "name": "AWS7.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "AWS7.js",
+        "cursor": {
+          "lineNumber": 2,
+          "column": 5
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "AWS7"
+        },
+        "triggers": [
+          {
+            "resourceName": "apiguekshaimageuploadany",
+            "config": {}
+          }
+        ],
+        "lastUpdated": 1602053428835,
+        "testCases": {
+          "b5ced613-28d1-4552-a2aa-9064ff106dc0": {
+            "id": "b5ced613-28d1-4552-a2aa-9064ff106dc0",
+            "functionId": "9daea6d6-4ebc-42f0-8a46-1cafc428d23d",
+            "name": "My First Test Case",
+            "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
+          }
+        }
+      }
+    },
+    "openFiles": [
+      "9daea6d6-4ebc-42f0-8a46-1cafc428d23d"
+    ],
+    "currentFileId": "9daea6d6-4ebc-42f0-8a46-1cafc428d23d",
+    "resources": {
+      "apiguekshaimageuploadany": {
+        "name": "apiguekshaimageuploadany",
+        "type": "API_GATEWAY",
+        "config": {
+          "apiType": 1,
+          "apiMode": 1,
+          "apiName": "ueksha",
+          "apiId": "t2fd6piyri",
+          "endpointType": "REGIONAL",
+          "rootResourceId": "oramdfs98g",
+          "existingResources": {
+            "/imageupload": "fjtc6k",
+            "/": "oramdfs98g"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/imageupload",
+          "resourceName": "imageupload",
+          "resourceId": "fjtc6k",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "test",
+          "mode": 1
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.4.3.1",
+    "projectName": "AWS7",
+    "projectDescription": "MY AWS 7",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-2",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1602053474052
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "aws7",
+      "url": "https://github.com/Kumudikatest/aws7"
+    }
+  }
+}
