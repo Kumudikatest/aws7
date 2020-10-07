@@ -24,7 +24,7 @@
         },
         "triggers": [
           {
-            "resourceName": "apigmyapiany",
+            "resourceName": "apigmyapiput",
             "config": {}
           }
         ],
@@ -37,12 +37,97 @@
             "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
           }
         }
+      },
+      "d1a9d9d8-724d-499c-a122-789f9ee14203": {
+        "id": "d1a9d9d8-724d-499c-a122-789f9ee14203",
+        "parent": null,
+        "name": "n'.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "n'.py",
+        "cursor": {
+          "lineNumber": 2,
+          "column": 5
+        },
+        "config": {
+          "runtime": "python3.8",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "n"
+        },
+        "triggers": [],
+        "lastUpdated": 1602066829081
+      },
+      "52003294-4cb0-40f3-9a96-4f6d57e0e611": {
+        "id": "52003294-4cb0-40f3-9a96-4f6d57e0e611",
+        "parent": null,
+        "name": "mm.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "mm.py",
+        "lastUpdated": 1602066838422
+      },
+      "467640da-0dc9-4f2c-8014-07439e40e03d": {
+        "id": "467640da-0dc9-4f2c-8014-07439e40e03d",
+        "parent": null,
+        "name": "k",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "fee5ec73-6ac3-48a4-84c7-5ec718fcb648",
+          "823a946a-b2b9-4053-963f-7e56a3a63e18"
+        ],
+        "isRemovable": true,
+        "filePath": "k"
+      },
+      "fee5ec73-6ac3-48a4-84c7-5ec718fcb648": {
+        "id": "fee5ec73-6ac3-48a4-84c7-5ec718fcb648",
+        "parent": "467640da-0dc9-4f2c-8014-07439e40e03d",
+        "name": "ll.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "k/ll.py",
+        "cursor": {
+          "lineNumber": 2,
+          "column": 5
+        },
+        "config": {
+          "runtime": "python3.8",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "ll"
+        },
+        "triggers": [],
+        "lastUpdated": 1602066957639
+      },
+      "823a946a-b2b9-4053-963f-7e56a3a63e18": {
+        "id": "823a946a-b2b9-4053-963f-7e56a3a63e18",
+        "parent": "467640da-0dc9-4f2c-8014-07439e40e03d",
+        "name": "__init__.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "k/__init__.py"
       }
     },
     "openFiles": [
-      "9daea6d6-4ebc-42f0-8a46-1cafc428d23d"
+      "9daea6d6-4ebc-42f0-8a46-1cafc428d23d",
+      "d1a9d9d8-724d-499c-a122-789f9ee14203",
+      "52003294-4cb0-40f3-9a96-4f6d57e0e611",
+      "fee5ec73-6ac3-48a4-84c7-5ec718fcb648"
     ],
-    "currentFileId": "9daea6d6-4ebc-42f0-8a46-1cafc428d23d",
+    "currentFileId": "fee5ec73-6ac3-48a4-84c7-5ec718fcb648",
     "resources": {
       "apiguekshaimageuploadany": {
         "name": "apiguekshaimageuploadany",
@@ -95,6 +180,97 @@
           "stageDeploymentId": "0k9x1t",
           "mode": 1
         }
+      },
+      "apigmynewtestany": {
+        "name": "apigmynewtestany",
+        "type": "API_GATEWAY",
+        "config": {
+          "apiType": 1,
+          "apiMode": 0,
+          "apiName": "mynew",
+          "endpointType": "REGIONAL",
+          "resourceMode": 0,
+          "resourceName": "test",
+          "resourcePath": "/test",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "test",
+          "mode": 0
+        }
+      },
+      "apigkumuapiktestpathany": {
+        "name": "apigkumuapiktestpathany",
+        "type": "API_GATEWAY",
+        "config": {
+          "apiType": 1,
+          "apiMode": 0,
+          "apiName": "kumuapi",
+          "endpointType": "REGIONAL",
+          "resourceMode": 0,
+          "resourceName": "ktestpath",
+          "resourcePath": "/ktestpath",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "ktest",
+          "mode": 0
+        }
+      },
+      "apighirutestwebhookany": {
+        "name": "apighirutestwebhookany",
+        "type": "API_GATEWAY",
+        "config": {
+          "apiType": 1,
+          "apiMode": 1,
+          "apiName": "hirutest",
+          "apiId": "q9inxic11l",
+          "endpointType": "REGIONAL",
+          "rootResourceId": "19n7i42c75",
+          "existingResources": {
+            "/": "19n7i42c75",
+            "/webhook": "3m2vfa",
+            "/webhook/endpoint": "pspgmr"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/webhook",
+          "resourceName": "webhook",
+          "resourceId": "3m2vfa",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "Test",
+          "stageDeploymentId": "v2h4j3",
+          "mode": 1
+        }
+      },
+      "apigmyapiput": {
+        "name": "apigmyapiput",
+        "type": "API_GATEWAY",
+        "config": {
+          "apiType": 1,
+          "apiMode": 1,
+          "apiName": "myapi",
+          "apiId": "8facv6bud4",
+          "endpointType": "REGIONAL",
+          "rootResourceId": "5z5yy2ayue",
+          "existingResources": {
+            "/": "5z5yy2ayue"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/",
+          "resourceName": "",
+          "resourceId": "5z5yy2ayue",
+          "restMethod": "PUT",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "lltest",
+          "mode": 1
+        }
       }
     },
     "customTemplate": {
@@ -122,11 +298,11 @@
     "projectName": "AWS7",
     "projectDescription": "MY AWS 7",
     "projectVersion": "1.0.0",
-    "projectRegion": "us-east-2",
+    "projectRegion": "us-west-1",
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1602057150651
+    "lastSave": 1602068245691
   },
   "VCS_STATE": {
     "provider": "GitHub",
