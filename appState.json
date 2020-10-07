@@ -24,7 +24,7 @@
         },
         "triggers": [
           {
-            "resourceName": "apiguekshaimageuploadany",
+            "resourceName": "apigmyapiany",
             "config": {}
           }
         ],
@@ -69,6 +69,32 @@
           "stageName": "test",
           "mode": 1
         }
+      },
+      "apigmyapiany": {
+        "name": "apigmyapiany",
+        "type": "API_GATEWAY",
+        "config": {
+          "apiType": 1,
+          "apiMode": 1,
+          "apiName": "myapi",
+          "apiId": "8facv6bud4",
+          "endpointType": "REGIONAL",
+          "rootResourceId": "5z5yy2ayue",
+          "existingResources": {
+            "/": "5z5yy2ayue"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/",
+          "resourceName": "",
+          "resourceId": "5z5yy2ayue",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "test",
+          "stageDeploymentId": "0k9x1t",
+          "mode": 1
+        }
       }
     },
     "customTemplate": {
@@ -100,7 +126,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1602056937426
+    "lastSave": 1602057150651
   },
   "VCS_STATE": {
     "provider": "GitHub",
